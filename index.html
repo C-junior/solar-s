@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Simulador Solar</title>
+  
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body >
+  <nav class="transparent lighten-1" role="navigation">
+    
+    <!-- search menu
+        <form class="example" action="">
+            <input type="search" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          -->
+      <div class="nav-wrapper container menu-t search-menu"><a id="logo-container" href="#" class="brand-logo logo-menu">Logo </a>
+        <ul class="right hide-on-med-and-down space">
+               
+          <li><div class="search">
+              <input type="text" class="searchTerm" placeholder="Busque em nosso site...">
+              <div type="submit" class="searchButton">
+                  <i class="material-icons large ">
+                      search
+                      </i>
+              </div>
+           </div></li>          
+          <li>
+            <a href="#"> 
+              <i class="material-icons Medium search-btn">
+                close
+                </i>
+              </a>
+        </li>                   
+          <li><a href="#" class="btn-menu btn transparent " id="btn-menu"> <i class="material-icons right">menu</i> MENU </a></li>
+        </ul>
+        
+        
+      </div>
+    
+    <div class="nav-wrapper container menu-t menu-main"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down space">
+             
+        <li><a href="#"> <strong style="text-decoration: underline"> PT-BR  </strong> </a></li>
+        <li><a href="#">EN</a></li>    
+        <li>
+          <a href="#"> 
+            <i class="material-icons Medium search-btn">
+              search
+              </i>
+            </a>
+      </li>        
+         
+        <li><a href="#" class="btn-menu btn transparent " id="btn-menu"> <i class="material-icons right">menu</i> MENU </a></li>
+      </ul>
+      
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+    </div>   
+
+
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <div class="hero-image"> <div class="overlay"></div> </div>
+      <br><br>
+      <div class="pad">
+        <div class="small-divider"></div>
+        <h2 class="header  white-text"><strong> Simule sua economia</strong></h2>      
+        <h5 class="header col s12 light white-text">Preencha seus dados abaixo</h5>
+        <div class="small-divider"></div>
+      </div>
+      
+      <br><br>
+      
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div id="firstform" class="section scrollspy">
+      
+      <!--   Icon Section   -->
+      <div class="row">        
+        <div class="col s12 signin z-depth-3 ">
+          <form  id="myForm" class="">
+            <div class="row">
+              <div class="input-field col s12  l2 ">                     
+                <input id="state" type="text" class="validate">
+                <label class="" for="state">Estado</label>
+              </div>
+              <div class="input-field col  s12 l3">                      
+                <input id="city" type="text" class="validate">
+                <label class="" for="city">Cidade</label>
+              </div>
+              <div   class="input-field col  s12 l3 building">  
+                <span class="padding-1 grey-text" > Quero simular para minha </span>
+                <div class="row">    
+                  <div class="col s12 m6">            
+                    <label class="rad" >
+                      <input id="house" type="radio" name="building" value="1" > <i class=" material-icons small house">house</i> <span class="house"> Casa</span>
+                      <div class="divider"></div>
+                    </label>
+                  </div>    
+                  <div class="col s12 m6">   
+                    <label class="rad" >
+                      <input id="empresa" type="radio" name="building" value="2" > <i class=" material-icons small buisness">business</i><span class="buisness"> Empresa</span>
+                      <div class="divider"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12  l4">
+                <div class="input-field col s7">                     
+                  <input id="fatura" type="text" class="validate">
+                  <label class="" for="fatura">Fatura mensal de energia</label>                         
+                </div>
+                <!-- <div class="col s4 energy">
+                  <label class="col s6">
+                    <input class="with-gap" name="energy" type="radio"  />
+                    <span>R$</span>
+                  </label >
+                  <label class="col s6">
+                    <input class="with-gap" name="energy" type="radio"  />
+                    <span>kWh</span>
+                  </label>
+                </div>-->
+                <div class="col s5 energy">
+                  <div class="str grey-text">  R$
+                    <label class="switch"><input type="checkbox" /> <div> </div>
+                    </label>
+                    kWh
+                  </div>
+                </div>
+              </div>                  
+            </div>
+          
+          <h5 class="grey-text text-darken-4 center">Insira seu email ou faça login com uma das redes</h5>
+          <div class=" col s10 offset-s1 sm-space">
+            <div data-target="email" class="btn-sm btn modal-trigger social-media col s12 l4 " > <i class="far fa-envelope 1x " ></i> <span > SIMULAR COM E-MAIL </span></div>
+            <div class="btn-sm btn social-media col s12 l4"> <i class="fab fa-facebook-f 1x " ></i> <span> SIMULAR COM FACEBOOK </span></div>
+            <div class="btn-sm btn social-media col s12 l4"> <i class="fab fa-google 1x " ></i> <span> SIMULAR COM GOOGLE </span></div>
+            
+          </div>
+          <!-- simulado email-->
+          <div class="row" id="simul-hide">
+            <div class="col s12 ">
+                <div class="col s12 margem margem-top">
+                    <div class="modal-divider blue"></div>
+                    <h4 class="blue-text margem-h4">Resualtado da sua Simulação.</h4>
+                </div>                
+                  <div class="col s12 m4 ">
+                      <div class="card simulado ">
+                        <div class="card-image">
+                          <img src="https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2FUnmetric.png&h=570&w=855&q=100&v=20170226&c=1">                          
+                        </div>                    
+                           
+                        <div class="card-content center">
+                            <p class="str"> SUA CIDADE É </p>
+                            <h5 class=" blue-text center str">Boa</h5>
+                          <p>Para energia solar.</p>
+                        </div>                        
+                      </div>
+                    </div>
+                    <div class="col s12 m4 ">
+                        <div class="card simulado ">
+                          <div class="card-image">
+                            <img src="https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2FUnmetric.png&h=570&w=855&q=100&v=20170226&c=1">                          
+                          </div>                    
+                             
+                          <div class="card-content center ">
+                              <p class="str"> ESTIMATIVA DE
+                                </p>
+                              <h5 class=" blue-text center str">9m² de área</h5>
+                            <p>para instalar seu sistema.</p>
+                          </div>                        
+                        </div>
+                      </div>
+                      <div class="col s12 m4 ">
+                          <div class="card simulado ">
+                            <div class="card-image">
+                              <img src="https://cdn.i.haymarketmedia.asia/?n=campaign-asia%2Fcontent%2FUnmetric.png&h=570&w=855&q=100&v=20170226&c=1">                          
+                            </div>                    
+                               
+                            <div class="card-content center">
+                                <p class="str"> VOCÊ PODE ECONOMIZAR ATÉ </p>
+                                <h5 class=" blue-text center str">76%</h5>
+                              <p>da sua conta de luz antiga.</p>
+                            </div>                        
+                          </div>
+                        </div>
+                        <div  class="col s12 l4">
+                     <a  href="#pesonalizado" class=" btn btn-again" > VAMOS ORÇAR?</a>
+                    </div>
+                     <div  class="col s12 l4">
+                     <a  href="#firstform" class=" btn btn-orcar " onclick="reset()"> SIMULAR NOVAMENTE</a>
+                    </div>
+            </div>
+          </form>  
+          </div>
+          
+          <!-- Modal Structure -->
+          <div id="email" class="modal modal-sm">
+            <div class="modal-content">
+              <a href="#!" class="modal-close waves-effect  btn-floating right grey btn-close" ><i class="material-icons ">
+                close
+              </i></a>
+              <div class="row margem">
+                <div class="modal-divider orange"></div>
+                <h4 class="col s8 orange-text ">Insira seus dados para completar sua simulação</h4>
+                
+                <form class="col s12">
+                  <div class="row">                                                
+                    <div class="input-field col s6 padding-4">
+                      <i class="material-icons prefix grey-text">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate">
+                      <label for="icon_prefix">Nome</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <i class="material-icons prefix grey-text">email</i>
+                      <input id="icon_telephone" type="tel" class="validate">
+                      <label for="icon_telephone">E-Mail</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-modal btn modal-simul" >SIMULAR</a>
+            </div>
+          </div>                        
+        </div>
+        
+        
+      </div>
+      
+    </div>
+    <br><br>
+    
+    <div class="section scrollspy" id="pesonalizado">
+      <div class="row">
+        <div class="col s12 margem">
+          <div class="modal-divider blue"></div>
+          <h4 class="blue-text margem-h4">Solicite um orçamento personalizado.</h4>
+        </div>
+        <form class="col s12" id="survey">
+          <div class="row">
+            <div class="input-field col s12 l5">
+              <input placeholder="Ex: João da Silva" id="nome" type="text" class="validate" required>
+              <label for="nome">Nome <span class="red-text">*</span> :</label>
+            </div>
+            <div class="input-field col s12 l5">
+              <input placeholder="Ex: João.silva@company.com" id="email" type="email" class="validate" required>
+              <label for="email">E-mail <span class="red-text">*</span> :</label>
+              <span class="helper-text" data-error="Use um email válido"></span>
+            </div>
+            <div class="input-field col s12 l2">
+              <input placeholder="(11) 11111-1111" id="tel" type="tel" class="validate phone_with_ddd" data-mask="(00) 00000-0000" required>
+              <label for="tel">Telefone <span class="red-text">*</span> :</label>
+              <span class="helper-text" data-error="Use um telefone válido"></span>
+            </div>
+            <div class="input-field col s12 l3">
+              <input placeholder="00.000.000/0000-00" id="cpfcnpj" type="text" class="validate " required>
+              <label for="cpfcnpj">CPF ou CNPJ <span class="red-text">*</span> :</label>
+            </div>
+            <div class="input-field col s12 l3">
+              <input placeholder="Ex: Doe Inc." id="empresa" type="text" class="validate">
+              <label for="empresa">Empresa:</label>
+            </div>
+            <div class="input-field col s12 l5">
+              <input placeholder="Ex: Rua Exemplo" id="rua" type="text" class="validate" required >
+              <label for="rua">Rua <span class="red-text">*</span> :</label>
+            </div>
+            <div class="input-field col s12 l1">
+              <input placeholder="Ex: 123" id="numero" type="number" class="validate" required>
+              <label for="numero">Numero<span class="red-text">*</span> :</label>
+            </div>
+            <div class="input-field col s12 l3">
+              <input placeholder="Ex: Apt" id="complemento" type="text" class="validate">
+              <label for="complemento">Complemento:</label>
+            </div>
+            <div class="input-field col s12 l2">
+              <input placeholder="Ex: 33333-333" id="cep" type="text" class="validate cep" required>
+              <label for="cep">Cep<span class="red-text">*</span> :</label>
+            </div>
+            <div class="col s12  l2  select-default">
+              <label>Pais<span class="red-text">*</span> :</label>
+              <select class="browser-default country-select" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="1">Brasil</option>
+                <option value="2">Exterior</option>                
+              </select>              
+            </div>
+            <div class=" col s12  l2  select-default " id="state-select">
+              <label>Estados<span class="red-text">*</span> :</label>
+              <select class="browser-default" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>           
+              </select>              
+            </div>
+            <div class="col s12  l3 select-default " id="city-select">
+              <label>Cidade<span class="red-text">*</span> :</label>
+              <select class="browser-default" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="1">Cidade 1</option>
+                <option value="2">Cidade 2</option>                
+              </select>              
+            </div>
+            <div class="col s12  l3 select-default">
+              <label>Onde nos Encontrou<span class="red-text">*</span> :</label>
+              <select class="browser-default find-us" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="1">Facebook</option>
+                <option value="2">Instagram</option>           
+                <option value="2">Anúncio do Google</option>     
+                <option value="2">Jornais/Revistas</option>     
+                <option value="2">Televisão</option>     
+                <option value="2">Rádio</option>     
+                <option value="3">Outros</option>        
+              </select>              
+            </div>
+            <div class="input-field col s12 l3 desc" >
+              <input placeholder=" " id="desc" type="text" class="validate " required>
+              <label for="desc">Descreva<span class="red-text">*</span> : 
+                <a class=" tooltipped" data-position="bottom" data-tooltip="<span class='black-text toolt'> <strong class='blue-text tool-text'>Programa e Parceria:</strong> <br> Diga o nome do programa ou parceiria <br> onde nos encontrou. <br>
+                  <strong class='blue-text tool-text'>Indicação:</strong> <br> Escreva o nome completo <br> de quem nos indicou. <br>
+                </span> ">
+                  <i class="fas fa-info-circle 9X"></i></a>
+                <span class="tooltiptext"></span>
+              </label>
+            </div>  
+            <div class="input-field col s12 l3">
+              <input placeholder="R$ 0,00" id="reais" type="text" class="validate money">
+              <label for="reais">Fatura mensal da energia em Reais<span class="red-text">**</span> :   
+                <a class=" tooltipped" data-position="bottom" data-tooltip="<span class='black-text toolt'> Não se preocupe com os <br>centavos, apenas  informe  o<br> valor aproximado
+                  da sua <br> ultima fatura.
+                </span> ">
+                  <i class="fas fa-info-circle 9X"></i></a>             
+              </label>
+            </div>  
+            <div class="input-field col s12 l3">
+              <input placeholder="0,00 kWh" id="kwh" type="text" class="validate money">
+              <label for="kWh">Fatura mensal da energia em Reais<span class="red-text">**</span> :</label>
+            </div>  
+          </div>
+          <div class="col s12 m6 l3"><p class="grey-text">Quero anexar minha fatura <span class="red-text">***</span>:</p>
+          <div class="file-field input-field ">
+            
+            <div class="btn btn-file"><i class="material-icons">
+              arrow_upward
+            </i>
+            <span>Anexar</span>
+            <input type="file">
+          </div>              
+        </div>
+      </div>      
+      <div class="col s12">
+         <button class="btn btn-submit col s12 m6 l3" type="submit" form="" value="Submit"> <span>ENVIAR FORMULÁRIO</span>  <i class="material-icons">
+            arrow_forward
+            </i>  
+          </button>
+        </div>
+        <div class="obs grey-text col s12">
+            *Campos obrigatórios. <br>
+            **Informe o valor da sua fatura em Reais ou kWh. <br>            
+            ***Limite máximo para o total de arquivos anexados de 8MB. 
+        </div>
+      </form>      
+      <div>        
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer white">
+  
+  <div class="">
+    <div class="container blue-text made">
+      <div class="divider-footer"></div>
+      Made by <a class="orange-text text-darken-3 " href="#">C. Junior</a>
+    </div>
+  </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mask.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,514 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+/* media responsive*/
+@media only screen and (max-width: 768px) {
+
+  .social-media {
+    margin: 5px !important;
+    width: 100% !important;
+  }
+   
+}
+
+/* media responsive*/
+
+body{
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/*general*/
+.margem {
+  margin-left: 15px !important;
+}
+.margem-top {
+  margin-top: 35px !important;
+}
+
+
+.menu-t a {
+ padding: 0px 5px !important ;
+}
+.menu-t{
+  display: block;
+}
+
+.str{
+  font-weight: 800;
+}
+
+.signin{
+  font-size: 12px;  
+  background-color: white;
+  padding-top: 25px !important;
+  }
+
+.social-media{
+  margin-top: 5px !important;
+ 
+}
+
+.social-media > span {
+  position: relative;
+  top:-2px;
+  left: 5px;
+  padding-left: 5px !important;
+  padding-right: 25px !important;  
+}
+
+.sm-space {
+  margin-top: 15px;
+  margin-bottom: 35px !important;
+}
+
+.btn-sm {  
+  border: #F07C02 solid 2px !important;
+  background-color: white;
+  color: #F07C02;
+  font-weight: 600;
+  }
+  .btn-sm:hover {
+    border: white solid 2px !important;
+    background-color: #F07C02 ;
+    color: #fff;    
+  }
+  .btn-modal {    
+    border: white solid 2px !important;
+    background-color: #F07C02 ;
+    color: #fff;   
+  }
+  .btn-modal:hover {
+    border: #F07C02 solid 2px !important;
+    background-color: white;
+    color: #F07C02;
+  }
+ .btn-modal {
+    padding-bottom: 35px;
+  }
+
+.btn {
+border-radius: 30px;
+border: rgb(155, 144, 144) solid 2px;
+}
+#btn-menu {  
+  padding: 0px 15px !important ;
+}
+#btn-menu:hover {  
+  border: rgb(255, 255, 255) solid 2px;
+}
+
+.search-menu #btn-menu:hover {
+  border: #00a9ff solid 2px;
+}
+
+.btn-close {
+  
+  color: gray;
+  border: #BDB9A6 solid 1px;  
+   
+}
+
+  .social-media i:hover::before {
+    transform: rotate(360deg);
+  }
+  
+  .social-media i:before {
+    display: inline-block;/* mandatory to be able to use transform */
+    transition: 0.7s all;
+  }
+
+   .btn-close i.material-icons:hover {
+		background-color: transparent;
+    transform: rotate(360deg);
+    transition: 1s;
+		cursor: pointer;
+		box-shadow: none;
+}
+
+
+.input-field > .resize {
+  font-size: 10px;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav {
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.0), 0 3px 1px -2px rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0) !important;
+}
+
+.pad {
+  margin-left: 5%;
+}
+.brand-logo{
+  margin-left: 5%;
+}
+
+.small-divider {
+  margin-top: 3%;
+  background-color: white;
+  width: 110px;
+  height: 10px;
+  border-radius: 5px; 
+}
+
+.modal-divider {
+  width: 60px;
+  height: 6px;  
+  border-radius: 3px; 
+  margin: 15px;
+}
+.margem-h4{
+  margin-left: 15px;
+  margin-bottom: 5%;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.engie.com.br/uploads/2018/05/257233-1-1440x958.jpg"); 
+  width: 100%;   
+  opacity: 1;
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -9999;
+}
+.overlay {
+  top: 0px;
+  background: linear-gradient(125deg,#00a9ff 15%,rgba(2,170,255,0) 70%);
+  height: 100%;
+  width: 100%;
+}
+
+.building
+{
+  padding-bottom: 15px;
+  padding-top:  15px;
+  margin-top: 8px;
+}
+
+.energy {
+  margin-top: 35px;
+}
+
+
+/* animaton  radio button*/
+.rad {  
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.rad > input
+{ /* HIDE ORG RADIO & CHECKBOX */
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* RADIO & CHECKBOX STYLES */
+/* DEFAULT <i> STYLE */
+.rad > i{ 
+  
+  vertical-align: middle;
+  
+  transition: 0.2s;
+  
+  
+ 
+}
+/* CHECKBOX OVERWRITE STYLES */
+
+ input[type=radio]:checked + i {
+  color:#F07C02;
+  font-style: normal;
+}
+
+.house {
+  position: relative;
+  top: 5px;
+  font-size: 1rem;
+  color: gray;
+}
+.buisness {
+  position: relative;
+  top: 5px;
+  font-size: 1rem;
+  color: gray;
+}
+
+
+/** Switch
+ -------------------------------------*/
+
+ .switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+/**
+ * 1. Adjust this to size
+ */
+
+.switch {
+  display: inline-block;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background: #BDB9A6;
+  border-radius: 1em;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: #F07C02;
+  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+  -webkit-transition: all 300ms;
+     -moz-transition: all 300ms;
+          transition: all 300ms;
+}
+
+.switch input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+     -moz-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+
+.rs {
+  margin-top: 62px;
+}
+
+.divider-footer {
+  height: 5px;
+  background-color: rgb(199, 194, 194);
+  border-radius: 3px;
+  width: 100%;
+  
+  margin-bottom: 25px !important;
+}
+.made {
+  text-align: center;
+  padding: 35px;
+}
+
+.select-default {
+  margin-bottom: 2rem;  
+}
+
+.btn-file {
+  background-color: white;
+  border: gray solid 1px;
+  padding: 0 19px !important;
+  color: gray;
+}
+.btn-file:hover {
+  background-color: gray;
+  border: white solid 1px;
+  color: white;
+}
+
+.btn-file span {
+  
+  padding: 15px 0px !important ;
+  position: relative;
+  bottom:5px;
+}
+
+.btn-file:hover i.material-icons {
+  transform: translateY(-5px);  
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.btn-submit {
+  margin-top: 25px;
+  height: 40px;
+  background-color: #2196f3;
+  border: white solid 1px;  
+  color: white;
+  border-radius: 30px !important;
+}
+.btn-submit:hover {
+  background-color: white;
+  border: #2196f3 solid 1px;
+  color: #2196f3;
+}
+
+.btn-submit span {
+  
+  padding: 15px 0px !important ;
+  position: relative;
+  bottom:5px;
+  font-weight: 600;
+}
+
+.btn-submit:hover i.material-icons {
+  transform: translateX(10px);  
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: none;
+}
+.file-field p {
+  color: gray;
+}
+
+.obs {
+  font-size: 12px;
+  margin-top: 25px !important;
+}
+
+/* colors form*/
+
+
+  /* label color */
+  .input-field label {
+    
+  }
+  /* label focus color */
+  .input-field input:focus + label {
+    color: #2196F3 !important;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #2196F3 !important;
+    box-shadow: 0 1px 0 0 #2196F3 !important;
+  }
+  .input-field input:focus {
+    border-bottom: 1px solid #2196F3 !important;
+    box-shadow: 0 1px 0 0 #2196F3 !important;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid rgb(71, 71, 71) !important;
+    box-shadow: 0 1px 0 0 rgb(71, 71, 71);
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid red !important;
+    box-shadow: 0 1px 0 0 #000;
+  }
+ /* tooltip*/
+
+ a i.tool {
+  background-color: white !important;
+  font-size: 10px !important;
+  color: rgb(71, 71, 71);
+  width: 100px;
+}
+label .backdrop{
+  background-color: white !important;
+  width: 100px;
+}
+
+.fas {
+  cursor: default;
+}
+
+/* search*/
+
+.search-btn{
+  text-align: center;  
+}
+.logo-menu {
+  color: #2196F3 !important;
+}
+.search-menu {
+  position: absolute;
+  top: 0;
+  z-index: 99 !important;
+  display: none;
+  background-color: white !important;
+}
+.search-menu ul li a{
+  color: #000 !important;
+}
+.menu-main{
+  display: block;
+}
+
+.search {
+  width: 500px;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  font-family: "Lato";
+  width: 100%;
+  border: 3px solid #2196F3;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 80px;
+  height: 60px;
+  border: 1px solid #2196F3;
+  background: #2196F3;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 30px;
+  line-height: 12px !important;
+}
+
+/* simulado*/
+.simulado {
+  border: #000 solid 1px;
+  
+}
+.text{
+  text-align: center;
+}
+
+.btn-orcar{
+  margin-top: 25px;
+  height: 40px;
+  padding: 0 65px; 
+  background-color: white;
+  border: gray solid 1px;
+  color: gray;
+  border-radius: 30px !important;  
+}
+
+.btn-orcar:hover {
+  background-color: gray;
+  border: white solid 1px;
+  color: white;
+}
+
+.btn-again {
+  margin-top: 25px;
+  height: 40px;
+  padding: 0 65px;
+  background-color: #2196f3;
+  border: white solid 1px;  
+  color: white;
+  border-radius: 30px !important;
+}
+.btn-again:hover {
+  background-color: white;
+  border: #2196f3 solid 1px;
+  color: #2196f3;
+}
